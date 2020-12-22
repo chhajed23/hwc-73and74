@@ -47,6 +47,7 @@ export default class ReadStory extends React.Component {
     return (
       <View style={styles.container}>
         <SearchBar
+       style={styles.searchBar}
           placeholder="Search the Title"
            onChangeText={(search)=>{this.searchFilter(search)}}
            onClear={(search)=>{this.searchFilter("")}}
@@ -75,5 +76,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  searchBar: {
+    width: 300,
+    height: 15,
   },
 });
